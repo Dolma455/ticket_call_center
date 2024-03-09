@@ -54,10 +54,17 @@ class CreateTicket extends StatelessWidget {
                           ),
                           const Padding(
                               padding: EdgeInsets.symmetric(horizontal: 6)),
-                          const Text("Ticket"),
+                          Text(
+                            "Ticket",
+                            style: TextStyle(
+                                color: Theme.of(context).primaryColor),
+                          ),
                           const Padding(
                               padding: EdgeInsets.symmetric(horizontal: 6)),
-                          const Icon(Icons.arrow_drop_down_outlined),
+                          Icon(
+                            Icons.arrow_drop_down_outlined,
+                            color: Theme.of(context).primaryColor,
+                          ),
                         ],
                       ),
                       const Padding(
@@ -68,10 +75,16 @@ class CreateTicket extends StatelessWidget {
                       ),
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 6)),
-                      const Text("Reports"),
+                      Text(
+                        "Reports",
+                        style: TextStyle(color: Theme.of(context).primaryColor),
+                      ),
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 6)),
-                      const Icon(Icons.arrow_drop_down_outlined),
+                      Icon(
+                        Icons.arrow_drop_down_outlined,
+                        color: Theme.of(context).primaryColor,
+                      ),
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 16)),
                       Icon(
@@ -80,17 +93,49 @@ class CreateTicket extends StatelessWidget {
                       ),
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 6)),
-                      const Text("Settings"),
+                      Text(
+                        "Settings",
+                        style: TextStyle(color: Theme.of(context).primaryColor),
+                      ),
                       const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 6)),
-                      const Icon(Icons.arrow_drop_down_outlined),
+                      Icon(
+                        Icons.arrow_drop_down_outlined,
+                        color: Theme.of(context).primaryColor,
+                      ),
                     ],
                   ),
-                  const Row(
+                  Row(
                     children: [
-                      Icon(Icons.supervised_user_circle_outlined),
-                      Padding(padding: EdgeInsets.symmetric(horizontal: 6)),
-                      Text("Admin Thapa"),
+                      const Icon(
+                        Icons.timer_outlined,
+                        color: Color(0xffAAAAAA),
+                      ),
+                      const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 6)),
+                      const Text(
+                        "6:12:10s",
+                        style: TextStyle(color: Color(0xffAAAAAA)),
+                      ),
+                      const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16)),
+                      const Icon(
+                        Icons.timer_off_outlined,
+                        color: Color(0xffAAAAAA),
+                      ),
+                      const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 6)),
+                      Text(
+                        "2:02:18s",
+                        style: TextStyle(
+                            color: const Color(0xff131313).withOpacity(0.7)),
+                      ),
+                      const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 46)),
+                      const Icon(Icons.supervised_user_circle_outlined),
+                      const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 6)),
+                      const Text("Admin Thapa"),
                     ],
                   )
                 ],
